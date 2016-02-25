@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # A test-driven JS assessment
 
 Technologies used : Angular , Karma ,Protractor , Gulp 
@@ -59,3 +60,7 @@ I will finish another test cases in angular into free time.
 TestArrayController and TestAsynController for testing .
 ## test/spec.js detail
  Here in this file I have written the testcases for the controller.
+=======
+# js-assessment-test
+This is for the Test for the Array using Angular-Karma
+>>>>>>> 4fe1adbf9c34b4bc36c7d0d681281a2e6ca173c3
