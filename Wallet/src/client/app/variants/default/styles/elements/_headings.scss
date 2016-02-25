@@ -1,0 +1,29 @@
+// write font-face declarations
+@include do-font-face(
+	$font-custom-headings-namespace-01,
+	$font-custom-headings-file-path-01,
+	$font-custom-headings-weight-01,
+	$font-custom-headings-style-01,
+	eot woff2 woff ttf
+);
+
+@include do-font-face(
+	$font-custom-headings-namespace-02,
+	$font-custom-headings-file-path-02,
+	$font-custom-headings-weight-02,
+	$font-custom-headings-style-02,
+	eot woff2 woff ttf
+);
+
+// write the base rules
+@include do-headings-base;
+
+// write adaptive heading rules per viewport
+@include do-headings-adaptive(
+	$font-size-h1-xs,
+	$font-size-h2-xs,
+	$font-size-h3-xs,
+	$font-size-h1-sm,
+	$font-size-h2-sm,
+	$font-size-h3-sm
+);

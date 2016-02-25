@@ -1,0 +1,192 @@
+$verify-payment-container-border-width: 1px;
+$verify-payment-container-border-style: solid;
+$verify-payment-container-height: 320px;
+$verify-payment-container-top-margin: 40px;
+$verify-payment-container-border: 1px solid #c5c5c5;
+
+$verify-payment-header-left-margin: 20px;
+
+$verify-payment-content-padding: 21px 44px;
+$verify-payment-content-height: 161px;
+$verify-payment-content-cc-img-holder-width: 210px;
+$verify-payment-content-shipping-height: 100px;
+$verify-payment-content-shipping-padding: 15px;
+$verify-payment-content-cc-last-four-font-size: 17px;
+$verify-payment-content-cc-img-holder-background-color: #fff;
+$verify-payment-content-shipping-background-color: #fff;
+$verify-payment-content-bg-color: #f7f6f6;
+
+$verify-payment-bottom-content: 0 20px 20px 20px;
+
+$verify-payment-cc-card-detail-cc-right-margin: 5px;
+
+$verify-payment-add-card-link-container-width: 110px;
+
+$verify-payment-card-brand-container: 280px;
+$verify-payment-card-brand-right-margin: 3px;
+
+
+
+// CC Brand colors
+// This will change on next Phase with real card brand
+
+$cc-master-bg-color: #333;
+
+$cc-brand-amex-bg-color-stop1: #c6c6cb;
+$cc-brand-amex-bg-color-stop2: #dbdbdf;
+$cc-brand-amex-bg-color-stop3: #99999e;
+$cc-brand-amex-bg-color-stop4: #99999e;
+
+$cc-brand-visa-bg-color-stop1: #0098c9;
+$cc-brand-visa-bg-color-stop2: #0089be;
+$cc-brand-visa-bg-color-stop3: #0069a4;
+$cc-brand-visa-bg-color-stop4: #00659f;
+
+$cc-brand-discover-bg-color-stop1: #e6e6e9;
+$cc-brand-discover-bg-color-stop2: #d7e0e8;
+$cc-brand-discover-bg-color-stop3: #a2a2a7;
+$cc-brand-discover-bg-color-stop4: #b8c4cf;
+
+$cc-brand-other-bg-color-stop1: #e6e6e9;
+$cc-brand-other-bg-color-stop2: #e6e6e9;
+$cc-brand-other-bg-color-stop3: #dbdbdf;
+$cc-brand-other-bg-color-stop4: #cbcbcf;
+
+%border-radius {
+	@include border-top-radius(5px);
+	@include border-right-radius(5px);
+	@include border-bottom-radius(5px);
+	@include border-left-radius(5px);
+}
+
+.verify-payment-container {
+	@extend %border-radius;
+	border: $verify-payment-container-border;
+	height: $verify-payment-container-height;
+	margin-top: $verify-payment-container-top-margin;
+}
+
+.verify-payment-header {
+	margin-left: $verify-payment-header-left-margin;
+}
+
+.verify-payment-content {
+	padding: $verify-payment-content-padding;
+	height: $verify-payment-content-height;
+	background: $verify-payment-content-bg-color;
+}
+
+.verify-payment-content-cc-img-holder {
+	@include position(relative);
+	@include padding(30px 10px 15px 10px);
+	color: $verify-payment-content-cc-img-holder-background-color;
+	width: $verify-payment-content-cc-img-holder-width;
+}
+
+.verify-payment-content-img {
+	@include position(absolute, null 10px 10px null);
+}
+
+.verify-payment-content-cc-last-four {
+	@include padding(null null null 4px);
+	font-size: $verify-payment-content-cc-last-four-font-size;
+}
+
+.verify-payment-content-cc-info-detail,
+.verify-payment-content-shipping-info {
+	@include margin(null null 0 null);
+}
+
+.verify-payment-bottom-content {
+	@include padding($verify-payment-bottom-content);
+}
+
+.verify-payment-content-shipping {
+	@include border-top-radius(5px);
+	@include border-right-radius(5px);
+	@include border-bottom-radius(5px);
+	@include border-left-radius(5px);
+	border: 1px solid $gray-lighter;
+	background: $verify-payment-content-shipping-background-color;
+	height: $verify-payment-content-shipping-height;
+	padding: $verify-payment-content-shipping-padding;
+}
+
+.verify-payment-cta-container {
+	@include size(55%, auto);
+	@include margin(null 20px null null);
+}
+
+.verify-payment-cta-txt {
+	@include size(53%, auto);
+	@include margin(null 2% null null);
+}
+
+.verify-payment-cta-btn {
+	@include size(45%, auto);
+}
+
+.verify-payment-add-card-link-container {
+	width: $verify-payment-add-card-link-container-width;
+}
+
+.verify-payment-card-brand-container {
+	width: $verify-payment-card-brand-container;
+}
+
+.verify-payment-card-brand-img {
+	display: inline;
+}
+
+.verify-payment-card-brand {
+	margin-right: $verify-payment-card-brand-right-margin;
+}
+
+.verify-payment-add-card-link-container,
+.verify-payment-cta-txt,
+.verify-payment-cta-btn,
+.verify-payment-card-brand {
+	float: left;
+}
+
+.verify-payment-cc-card-detail {
+	text-align: center;
+}
+
+.verify-payment-cc-card-detail-cc {
+	margin-right: $verify-payment-cc-card-detail-cc-right-margin;
+}
+
+.verify-payment-cc-card-info-edit {
+	@include margin(null null null 10px);
+}
+
+.verify-payment-add-card-link,
+.verify-payment-address-add-address-link {
+	@include margin(null 15px null 5px);
+}
+
+// CSS3 Card Brand Background Images
+// Will be replaced by an actual cc card art on the next sprints
+.verify-payment-content-cc-master {
+	@extend %border-radius;
+	background-color: $cc-master-bg-color;
+}
+.verify-payment-content-cc-amex {
+	@extend %border-radius;
+	@include linear-gradient(-15deg, $cc-brand-amex-bg-color-stop1 0%, $cc-brand-amex-bg-color-stop2 50%, $cc-brand-amex-bg-color-stop3 51%, $cc-brand-amex-bg-color-stop4 100%);
+}
+.verify-payment-content-cc-visa {
+	@extend %border-radius;
+	@include linear-gradient(-15deg, $cc-brand-visa-bg-color-stop1 0%, $cc-brand-visa-bg-color-stop2 50%, $cc-brand-visa-bg-color-stop3 51%, $cc-brand-visa-bg-color-stop4 100%);
+}
+.verify-payment-content-cc-discover {
+	@extend %border-radius;
+	@include linear-gradient(-15deg, $cc-brand-discover-bg-color-stop1 0%, $cc-brand-discover-bg-color-stop2 50%, $cc-brand-discover-bg-color-stop3 51%, $cc-brand-discover-bg-color-stop4 100%);
+}
+.verify-payment-content-cc-other {
+	@extend %border-radius;
+	@include linear-gradient(-15deg, $cc-brand-other-bg-color-stop1 0%, $cc-brand-other-bg-color-stop2 50%, $cc-brand-other-bg-color-stop3 51%, $cc-brand-other-bg-color-stop4 100%);
+}
+
+

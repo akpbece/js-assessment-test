@@ -1,0 +1,8 @@
+
+// main content -- (not header nor footer)
+.main-content {
+	@include clearfix;
+	position: relative;	// explicitly define relation to parents and children
+	min-height: $content-min-height; // always consume at least this space
+	padding-bottom: $padding-large-vertical; // push down footer after main content for some breathing room
+}

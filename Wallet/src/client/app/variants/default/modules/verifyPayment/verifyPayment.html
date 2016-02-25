@@ -1,0 +1,72 @@
+<div class="verify-payment">
+	<div class="container">
+		<div class="col-sm-6">
+			<div class="verify-payment-container">
+				<h2 class="verify-payment-header">
+					{{app.text.verifyPaymentCardHeading}}
+				</h2>
+
+				<div class="verify-payment-content">
+					<div class="verify-payment-content-cc-img-holder verify-payment-content-cc-{{vm.prefPaymentMethod.cardBrand.code}} center-block">
+						<p class="verify-payment-content-cc-info text-center">
+							<span>**** **** ****</span><span class="verify-payment-content-cc-last-four">{{vm.prefPaymentMethod.maskedAccountNumber}}</span>
+						</p>
+						<p class="verify-payment-content-cc-info-detail">
+							{{vm.prefPaymentMethod.expiryMonth}}/{{vm.prefPaymentMethod.expiryYear}}
+						</p>
+						<p class="verify-payment-content-cc-info-detail">
+							{{vm.prefPaymentMethod.cardholderName}}
+						</p>
+						<img class="verify-payment-content-img" ng-src="{{vm.prefPaymentMethod.cardBrand.logo.ref}}"/>
+					</div>
+				</div>
+
+				<div class="verify-payment-bottom-content">
+					<div class="verify-payment-add-card">
+						<div class="verify-payment-add-card-link-container">
+							<span aria-hidden="true" class="fa fa-lg fa-plus-circle"></span>
+							<a class="verify-payment-add-card-link" href="">
+								{{app.text.addCard}}
+							</a>
+						</div>
+						<div class="verify-payment-card-brand-container">
+							<div class="verify-payment-card-brand" ng-repeat="card in vm.merchantAcceptedCC">
+								<img class="verify-payment-card-brand-img" alt="{{card}} card" ng-src="./images/cardbrand/{{card}}.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div ng-hide="vm.suppressShippingAddress" class="verify-payment-container ng-hide">
+				<h2 class="verify-payment-header">
+					{{app.text.verifyPaymentAddressHeading}}
+				</h2>
+
+				<mc-carousel template="shipping"></mc-carousel>
+
+				<div class="verify-payment-bottom-content">
+					<div class="verify-payment-add-address">
+						<span aria-hidden="true" class="fa fa-lg fa-plus-circle"></span>
+						<a class="verify-payment-address-add-address-link" href="" ng-click="vm.addAddress()">
+							{{app.text.addAddress}}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="verify-payment-cta-container pull-right">
+			<div class="verify-payment-cta-txt">
+				{{app.text.checkoutConfirmationContinue}}
+			</div>
+			<div class="verify-payment-cta-btn">
+				<button type="button" class="btn btn-block btn-primary" ng-click="vm.continueCheckout()">
+					{{app.text.continue}}
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

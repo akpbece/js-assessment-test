@@ -1,0 +1,4 @@
+<select ng-model="model[options.key]" class="form-control"
+		ng-options="option.code as option.name for option in options.templateOptions.options">
+	<option selected="selected" disabled="disabled" value="">{{options.templateOptions.placeholder}}</option>
+</select>

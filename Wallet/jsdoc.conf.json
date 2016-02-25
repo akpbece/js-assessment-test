@@ -1,0 +1,32 @@
+
+{
+	"source": {
+		"include": ["./"],             // array of paths to files for jsdoc to document
+		"exclude": [  				   // array of paths to exclude
+			".tmp",
+			"bower_components",
+			"build",
+			"docs",
+			"report",
+			"node_modules"
+		],
+		"includePattern": ".+\\.js?$"  // only files ending in ".js" will be processed
+	},
+	"tags": {                          // default jsdoc config
+		"allowUnknownTags": true,
+		"dictionaries": [
+			"jsdoc",
+			"closure"
+		]
+	},
+	"templates": {                     // default jsdoc config
+		"cleverLinks": false,
+		"monospaceLinks": false
+	},
+	"opts": {
+		"encoding": "utf8",
+		"destination": "./docs/",      // Place where jsdoc gets generated
+		"recurse": true,			   // Recurse option
+		"readme": "./README.md"        // Readme file that will be placed on generated doc
+	}
+}

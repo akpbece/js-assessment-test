@@ -1,0 +1,26 @@
+<div class="col-xs-6">
+	<h2>{{app.text.passwordEntryHeading}}</h2>
+	<h2>{{app.text.passwordEntrySubHeading}}</h2>
+	<!--TODO userAccountLocked UI will address this when we need to implement 'reset password'-->
+	<p class="well" ng-show="vm.userAccountLocked"
+	   ng-bind-html="app.text.userAccountLocked"></p>
+	<p class="well" ng-show="vm.userAccountSuspsnded"
+	   ng-bind-html="app.text.userAccountSuspsnded"></p>
+</div>
+<div class="col-xs-6">
+	<form>
+		<formly-form fields="vm.fields" model="vm.user" form="vm.loginForm" options="vm.options">
+			<div class="col-sm-6 col-xs-6">
+				<button type="button" class="btn btn-link" ng-click="vm.forgotPasswordLinkClick()">
+					{{app.text.forgotPasswordLabel}}
+				</button>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-6">
+					<input class="btn btn-primary btn-block" ng-click="vm.signin()" ng-disabled="vm.loginForm.$invalid"
+						   type="submit" value="{{app.text.signInButton}}">
+				</div>
+			</div>
+		</formly-form>
+	</form>
+</div>

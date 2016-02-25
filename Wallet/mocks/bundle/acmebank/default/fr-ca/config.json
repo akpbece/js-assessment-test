@@ -1,0 +1,39 @@
+{
+	"loggerConsoleLevels": "error,warn,info,debug",
+	"loggerRemoveLevels": "error,warn,info",
+	"loggerRemotePath": "/api/logger",
+	"appErrorPrefix": "[phoenix Error]",
+	"appTitle": "MasterPass",
+	"locales": [
+		{
+			"label": "English",
+			"value": "en-us"
+		},
+		{
+			"label": "English",
+			"value": "en-ca"
+		},
+		{
+			"label": "Français",
+			"value": "fr-ca"
+		},
+		{
+			"label": "Español",
+			"value": "es-es"
+		}
+	],
+	"firstNameMinLength": 2,
+	"firstNameMaxLength": 30,
+	"lastNameMinLength": 2,
+	"lastNameMaxLength": 30,
+	"addressLine1MinLength": 2,
+	"addressLine1MaxLength": 100,
+	"addressCityMinLength": 2,
+	"addressCityMaxLength": 30,
+	"addressPostalCodeMinLength": 2,
+	"addressPostalCodeMaxLength": 30,
+	"termsURL": "TODO: generate text of Terms here",
+	"passwordMinLength": 6,
+	"passwordMaxLength": 30,
+	"primaryConfigOTP": "SMS"
+}

@@ -1,0 +1,289 @@
+{
+	"countrySubdivisions": [
+		{
+			"code": "US-AK",
+			"name": "AK",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-AL",
+			"name": "AL",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-AR",
+			"name": "AR",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-AS",
+			"name": "AS",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-AZ",
+			"name": "AZ",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-CA",
+			"name": "CA",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-CO",
+			"name": "CO",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-CT",
+			"name": "CT",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-DC",
+			"name": "DC",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-DE",
+			"name": "DE",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-FL",
+			"name": "FL",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-GA",
+			"name": "GA",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-GU",
+			"name": "GU",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-HI",
+			"name": "HI",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-IA",
+			"name": "IA",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-ID",
+			"name": "ID",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-IL",
+			"name": "IL",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-IN",
+			"name": "IN",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-KS",
+			"name": "KS",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-KY",
+			"name": "KY",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-LA",
+			"name": "LA",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-MA",
+			"name": "MA",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-MD",
+			"name": "MD",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-ME",
+			"name": "ME",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-MI",
+			"name": "MI",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-MN",
+			"name": "MN",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-MO",
+			"name": "MO",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-MP",
+			"name": "MP",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-MS",
+			"name": "MS",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-MT",
+			"name": "MT",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-NC",
+			"name": "NC",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-ND",
+			"name": "ND",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-NE",
+			"name": "NE",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-NH",
+			"name": "NH",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-NJ",
+			"name": "NJ",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-NM",
+			"name": "NM",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-NV",
+			"name": "NV",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-NY",
+			"name": "NY",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-OH",
+			"name": "OH",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-OK",
+			"name": "OK",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-OR",
+			"name": "OR",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-PA",
+			"name": "PA",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-PR",
+			"name": "PR",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-RI",
+			"name": "RI",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-SC",
+			"name": "SC",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-SD",
+			"name": "SD",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-TN",
+			"name": "TN",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-TX",
+			"name": "TX",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-UM",
+			"name": "UM",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-UT",
+			"name": "UT",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-VA",
+			"name": "VA",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-VI",
+			"name": "VI",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-VT",
+			"name": "VT",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-WA",
+			"name": "WA",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-WI",
+			"name": "WI",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-WV",
+			"name": "WV",
+			"extensionPoint": null
+		},
+		{
+			"code": "US-WY",
+			"name": "WY",
+			"extensionPoint": null
+		}
+	]
+}

@@ -1,0 +1,28 @@
+<section class="container">
+	<div class="well registration-success text-center">
+		<span class="sprite-confirmation-check"></span>
+		<h1>{{app.text.registrationConfirmationHeading}}</h1>
+		<div class="registration-success-subheading">
+			<h4>{{app.text.registrationConfirmationSubHeading1}}</h4>
+			<h4>{{app.text.registrationConfirmationSubHeading2}}</h4>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="sprite-dynamic-button registration-success-dynamic-button center-block"></div>
+			</div>
+			<div class="col-sm-6">
+				<formly-form fields="vm.fields" model="vm.confirmationModel" form="vm.confirmationForm"></formly-form>
+			</div>
+		</div>
+	</div>
+
+	<formly-form fields="vm.outerFields" model="vm.confirmationModel" form="vm.confirmationForm"></formly-form>
+
+	<div class="row">
+		<span class="col-sm-4 col-sm-offset-5 text-right hidden-xs" ng-bind-html="app.text.checkoutConfirmationContinue"></span>
+		<div class="col-sm-3">
+			<button type="button" ng-click="vm.continueCheckout()" class="btn btn-primary btn-block pull-right">{{app.text.continue}}</button>
+		</div>
+	</div>
+</section>

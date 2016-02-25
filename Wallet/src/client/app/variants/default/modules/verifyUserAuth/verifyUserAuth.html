@@ -1,0 +1,71 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="col-sm-5">
+				<h2>{{app.text.uniqueCodeTitle}}</h2>
+				<h4>{{app.text.uniqueCodeDescription}}</h4>
+				<p class="well" ng-show="vm.countUniqueCodeSoftLock"
+				   ng-bind-html="app.text.uniqueCodeSoftLock"></p>
+				<p class="well" ng-show="vm.countUniqueCodeSuspended"
+				   ng-bind-html="app.text.uniqueCodeSuspended"></p>
+			</div>
+
+			<div class="col-sm-7">
+				<formly-form fields="vm.uniqueCodefields" form="vm.uniqueCodeForm" model="vm.verifyAuthModel"
+							 options="vm.options">
+					<div class="error-messages">
+						{{vm.uniqueCodeErrorMessage}}
+					</div>
+				</formly-form>
+				<div class="col-sm-12" ng-show="app.config.primaryConfigOTP === 'SMS'">
+					<div class="col-sm-6 pull-left">
+						<button class="col-xs-12 btn btn-link" ng-click="vm.verifyByPhone()">
+							{{app.text.uniqueCodeTextMeAgain}}
+						</button>
+					</div>
+					<div class="col-sm-6">
+						<button class="col-xs-12 btn btn-link" ng-click="vm.verifyByEmail()">
+							{{app.text.uniqueCodeEmailMeInstead}}
+						</button>
+					</div>
+				</div>
+				<div class="col-sm-12 pull-right" ng-show="app.config.primaryConfigOTP === 'EMAIL'">
+					<div class="col-sm-6">
+						<button class="col-xs-12 btn btn-link" ng-click="vm.verifyByEmail()">
+							{{app.text.uniqueCodeEmailMeAgain}}
+						</button>
+					</div>
+					<div class="col-sm-6">
+						<button class="col-xs-12 btn btn-link" ng-click="vm.verifyByPhone()">
+							{{app.text.uniqueCodeTextMeInstead}}
+						</button>
+					</div>
+				</div>
+				<div class="col-sm-12" ng-if="vm.showVerifyAuthForm">
+					<span>{{vm.verifyOptionsFormDescription}}</span>
+					<formly-form fields="vm.verifyOptionsFields" form="vm.verifyOptionsForm"
+								 model="vm.verifyOption" options="vm.options">
+						<div>
+							<button class="col-xs-12 btn btn-primary"
+									ng-disabled="vm.verifyOptionsForm.$invalid"
+									type="submit" ng-click="vm.onResendUniqueCode()">
+								{{vm.buttonText}}
+							</button>
+						</div>
+					</formly-form>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 margin">
+						<div class="col-xs-6 pull-right">
+							<button class="col-xs-12 btn btn-primary"
+									ng-disabled="vm.uniqueCodeForm.$invalid"
+									type="submit" ng-click="vm.verifyAuthCode()">
+								{{app.text.continueButton}}
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

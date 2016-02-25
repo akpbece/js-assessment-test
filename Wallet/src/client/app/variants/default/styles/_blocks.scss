@@ -1,0 +1,11 @@
+// See http://getbem.com/introduction/ - Block, Element, Modifier
+// use a single dash
+// Main motivation of using BEM is so we do not have to worry about
+// css cascading problem and maintainability.
+//
+// a block or cluster of elements meant
+// to represent the higher level
+// of an abstraction or component
+
+@import 'blocks/main-content';
+@import 'blocks/verify-payment';

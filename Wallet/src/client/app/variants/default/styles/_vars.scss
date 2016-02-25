@@ -1,0 +1,25 @@
+// NOTE: Temporary placeholder for SCSS variables until SCSS framework consistent
+
+$path-to-images: '../images';
+
+// layout
+/////////////////
+
+// Content
+$content-min-height: 480px;
+
+// Wallet Elements
+
+// modules
+/////////////////
+
+// registration confirmation
+$dynamic-button-width: 228px;
+$dynamic-button-scale-factor: $dynamic-button-width / $sprite-dynamic-button-width;
+
+$registration-success-dynamic-button: (
+	width: $dynamic-button-width,
+	scale-factor: $dynamic-button-scale-factor,
+	height: $sprite-dynamic-button-height * $dynamic-button-scale-factor,
+	background-size-x: percentage($spritesheet-width / $sprite-dynamic-button-width)
+);
